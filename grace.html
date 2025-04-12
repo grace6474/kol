@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang= »fr »>
+<head>
+  <meta charset= »UTF-8 »>
+  <meta name= »viewport » content= »width=device-width, initial-scale=1.0 »>
+  <title>IgoTech – Agence Digitale</title>
+  <link href= »https://fonts.googleapis.com/css2 ?family=Inter :wght@400 ;600 ;700&display=swap » rel= »stylesheet »>
+  <style>
+    Body {
+    Font-family : ‘Inter’, sans-serif ;
+    Margin : 0 ;
+    Background : #f9f9f9 ;
+    Color : #1a1a1a ;
+  }
+
+  Header {
+    Background : #fff ;
+    Padding : 20px 40px ;
+    Display : flex ;
+    Justify-content : space-between ;
+    Align-items : center ;
+    Border-bottom : 1px solid #ddd ;
+  }
+
+  Header h1 {
+    Color : #2be964 ;
+  }
+
+  Nav a {
+    Margin-left : 20px ;
+    Color : #333 ;
+    Text-decoration : none ;
+    Font-weight : 600 ;
+  }
+
+  .hero {
+    Background : #e6f0ff ;
+    Padding : 60px 40px ;
+    Text-align : center ;
+  }
+
+  .hero h2 {
+    Font-size : 32px ;
+    Margin-bottom : 10px ;
+  }
+
+  .hero p {
+    Font-size : 18px ;
+    Margin-bottom : 20px ;
+  }
+
+  .hero button {
+    Padding : 12px 24px ;
+    Background : #2be96e ;
+    Border : none ;
+    Color : #fff ;
+    Border-radius : 5px ;
+    Font-weight : 600 ;
+    Cursor : pointer ;
+  }
+
+  Section {
+    Padding : 60px 40px ;
+    Max-width : 1200px ;
+    Margin : auto ;
+  }
+
+  .services, .portfolio, .contact {
+    Display : grid ;
+    Gap : 30px ;
+  }
+
+  .services .item, .portfolio .item {
+    Background : #fff ;
+    Padding : 20px ;
+    Border-radius : 10px ;
+    Box-shadow : 0 4px 8px rgba(0,0,0,0.05) ;
+    Text-align : center ;
+  }
+
+  .services h3, .portfolio h3 {
+    Color : #e92b2b ;
+  }
+
+  .testimonials {
+    Background : #f0f8ff ;
+    Text-align : center ;
+    Padding : 60px 40px ;
+  }
+
+  .testimonial {
+    Font-style : italic ;
+    Font-size : 18px ;
+    Margin-top : 20px ;
+  }
+
+  .contact form {
+    Display : flex ;
+    Flex-direction : column ;
+    Gap : 15px ;
+  }
+
+  .contact input, .contact textarea {
+    Padding : 12px ;
+    Border : 1px solid #ccc ;
+    Border-radius : 5px ;
+    Font-size : 16px ;
+  }
+
+  .contact button {
+    Width : fit-content ;
+    Padding : 12px 24px ;
+    Background : #2b7de9 ;
+    Color : #fff ;
+    Border : none ;
+    Border-radius : 5px ;
+    Font-weight : bold ;
+    Cursor : pointer ;
+  }
+
+  Footer {
+    Background : #222 ;
+    Color : #fff ;
+    Text-align : center ;
+    Padding : 30px ;
+  }
+
+  @media (min-width : 768px) {
+    .services, .portfolio {
+      Grid-template-columns : repeat(3, 1fr) ;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>IgoTech</h1>
+  <nav>
+    <a href= "#services">Services</a>
+    <a href= "#portfolio">Portfolio</a>
+    <a href= "#temoignages">Témoignages</a>
+    <a href= "#contact">Contact</a>
+  </nav>
+</header>
+
+  <section class= "hero ">
+    <h2>Agence Digitale pour Votre Entreprise</h2>
+    <p>IgoTech vous accompagne dans vos projets numériques avec passion et expertise.</p>
+    <button>Voir nos services</button>
+  </section>
+
+  <section id= "services ">
+    <h2>Nos Services</h2>
+    <div class= "services">
+      <div class= "item ">
+        <h3>Création de Sites Web</h3>
+        <p>Des sites modernes, rapides et efficaces.</p>
+      </div>
+      <div class= "item ">
+        <h3>Gestion des Réseaux Sociaux</h3>
+        <p>Une stratégie social media adaptée à votre marque.</p>
+      </div>
+      <div class= "item ">
+        <h3>Création de Contenu Visuel</h3>
+        <p>Des visuels percutants et engageants.</p>
+      </div>
+      <div class= "item ">
+        <h3>Marketing Digital</h3>
+        <p>Campagnes ciblées pour booster votre visibilité.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id= "portfolio ">
+    <h2>Portfolio</h2>
+    <div class= "portfolio ">
+      <div class= "item ">
+        <h3>Projet Web</h3>
+        <p>Site vitrine pour une société de services.</p>
+      </div>
+      <div class= "item ">
+        <h3>Application Mobile</h3>
+        <p>Application e-commerce sur mesure.</p>
+      </div>
+      <div class= "item ">
+        <h3>Identité Visuelle</h3>
+        <p>Rebranding d’une entreprise innovante.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class= "testimonials " id= "temoignages ">
+    <h2>realiser par:</h2>
+    <p class= "testimonial "> »Igo GRACE » <br>–kol@@@</p>
+  </section>
+
+  <section class= "contact " id= "contact ">
+    <h2>Contact</h2>
+    <form>
+      <input type= "text " placeholder= "Nom ">
+      <input type= "email " placeholder= "Email ">
+      <textarea rows= "5 " placeholder= "Message "></textarea>
+      <button>Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy ; 2025 IgoTech | 123 Avenue kondol, tchad| +235 63 45 67 89</p>
+  </footer>
+
+</body>
+</html>
+
